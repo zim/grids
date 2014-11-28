@@ -71,11 +71,9 @@ div[class^="col-"], div[class*="col-"]{
         @include at-breakpoint($medium) {
           @include span-columns(6,12);
           outline:1px solid green;
-        }
-        
-        
-        
+        }   
     } //col-md-6-2
+    
     .col-md-6-end {
         @include at-breakpoint($small) {
           @include span-columns(6 omega,12);
@@ -241,8 +239,39 @@ div[class^="col-"], div[class*="col-"]{
 }// end .layout {
 
 .row{
-  background-color:red;
+  background-color:yellow;
+  
+  &.offset{
+    background-color:black;
+    
+    .layout {
+      // NEED THIS TO ENABLE SUSY GRID TO WORK
+      @include container;
+      
+      .col-md-6 {
+          @include at-breakpoint($small) {
+            //@include push(3);
+            //@include span-columns(4,12);
+            //@include push(3);
+            outline:1px solid green;
+            background-color:green;
+          }
+          @include at-breakpoint($medium) {
+            @include span-columns(6,12);
+            outline:1px solid green;
+          }   
+      } //col-md-6-2
+    }
+    
+  }
 }
+
+// different row -------------------------------------
+// .layout {
+  // // NEED THIS TO ENABLE SUSY GRID TO WORK
+  // @include container;
+// 
+// }
 
 body{
   outline:1px solid red;
