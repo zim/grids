@@ -312,6 +312,7 @@ div[class^="col-"], div[class*="col-"] {
 /* line 244, ../sass/_layout.scss */
 .row.offset {
   background-color: black;
+  outline: 1px solid red;
 }
 /* line 247, ../sass/_layout.scss */
 .row.offset .layout {
@@ -322,6 +323,7 @@ div[class^="col-"], div[class*="col-"] {
   padding-right: 2em;
   margin-left: auto;
   margin-right: auto;
+  outline: 1px solid red;
 }
 /* line 38, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
 .row.offset .layout:after {
@@ -332,6 +334,7 @@ div[class^="col-"], div[class*="col-"] {
 @media (min-width: 30em) {
   /* line 251, ../sass/_layout.scss */
   .row.offset .layout .col-md-6 {
+    margin-left: 14.70588%;
     outline: 1px solid green;
     background-color: green;
   }
@@ -346,7 +349,7 @@ div[class^="col-"], div[class*="col-"] {
   }
 }
 
-/* line 276, ../sass/_layout.scss */
+/* line 277, ../sass/_layout.scss */
 body {
   outline: 1px solid red;
 }

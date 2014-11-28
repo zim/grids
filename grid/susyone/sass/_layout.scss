@@ -243,16 +243,16 @@ div[class^="col-"], div[class*="col-"]{
   
   &.offset{
     background-color:black;
-    
+    outline:1px solid red;
     .layout {
       // NEED THIS TO ENABLE SUSY GRID TO WORK
       @include container;
-      
+      outline:1px solid red;
       .col-md-6 {
           @include at-breakpoint($small) {
             //@include push(3);
             //@include span-columns(4,12);
-            //@include push(3);
+            @include push(1);
             outline:1px solid green;
             background-color:green;
           }
@@ -261,6 +261,7 @@ div[class^="col-"], div[class*="col-"]{
             outline:1px solid green;
           }   
       } //col-md-6-2
+      
     }
     
   }
