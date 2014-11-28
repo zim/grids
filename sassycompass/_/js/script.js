@@ -1,0 +1,1 @@
+function other(){return"other one"}function test(){return"Hi there you muppet"}
